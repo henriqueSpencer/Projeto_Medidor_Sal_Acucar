@@ -43,22 +43,6 @@ void setup() {
     return;
   }
   
-  // Criando/ abrindo o arquivo 
-  myFile = SD.open("Resultados.CSV", FILE_WRITE);
-  
-  // if the file opened okay, write to it:
-  if (myFile) {
-    Serial.println("Writing to file...");
-    // Write to file
-    myFile.println("Testing text 1, 2 ,3...");
-    myFile.close(); // close the file
-    Serial.println("Done.");
-  }
-  // if the file didn't open, print an error:
-  else {
-    Serial.println("error opening test.txt");
-  }
-  ///////////////////////////------------//////////////////
 }
 void loop() {
 
